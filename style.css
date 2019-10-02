@@ -9,6 +9,27 @@ header{
     width: 100%;
 }
 
+body{
+    overflow-y: scroll;
+    height: 200%;
+    animation: pageLoad 1.5s;
+}
+
+@media all and (max-width: 1350px), all and (max-height: 300px) {
+    nav{ opacity: 0;}
+}
+
+
+
+@keyframes pageLoad{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 
 a{
     font-family: 'Poppins', sans-serif;
@@ -18,9 +39,15 @@ a{
     text-decoration: none;
 }
 
+nav{
+    transition: opacity 200ms;
+}
+
 nav ul{
+    position: absolute;
+    overflow: hidden;
+    left:68%;
     list-style: none;
-    float: right;
     padding: 20px 20px;
 }
 
@@ -29,36 +56,135 @@ nav li{
     padding-right: 30px;
 }
 
+
 .mypic{
-    width: 26%;
+    position: absolute;
+    top: 45%;
+    left: 32%; 
+    transform: translate(-50%,-50%);
+    width: 22%;
     border: solid;
     border-radius: 100%;
     border-width: 50%;
     border-color: azure;
-    margin: 150px 0px 0px 200px;
 }
 
 .desc{
     font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 3.1vw;
     color: white;
-    margin-left: 650px;
-    margin-top: -220px;
-    margin-right: 150px; 
+    position: absolute;
+    top: 43%;
+    left: 65%; 
+    transform: translate(-50%,-50%);
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+
+.desc2{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 65.5%; 
+    transform: translate(-50%,-50%);
+}
+
+button{
+    position: absolute;
+    top: 78%;
+    left: 32%; 
+    transform: translate(-50%,-50%);
+    background: none;
+    color: white;
+    width: 240px;
+    height: 80px;
+    border: 1px solid white;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+button:hover{
+    background: lightslategray;
+    cursor: pointer;
+}
+
+button:hover:before{
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover:after{
+    opacity: 1;
+    transition: .7s;
+}
+
+.arrow{
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+    box-shadow: -2px 2px 0 white;
+    transform: rotate(-45deg);
+}
+
+
+
+.second_section p{
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 3.1vw;
+    color: white;
+    position: absolute;
+    top: 145%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .social_media{
-    margin-left: 650px;
-    margin-top: 50px;
+    position: absolute;
+    top: 160%;
+    left: 61%; 
+    transform: translate(-50%,-50%);
 }
 
 .facebook, .linkedin, .github{
-    padding-right: 30px;
+    padding-right: 25px;
 }
 
 .git2{
     border: none;
     border-radius: 100%;
 }
+
+footer{
+    font-family: 'Poppins', serif;
+    font-size: 1.1vw;
+    color: lightgrey;
+    position: absolute;
+    top: 195%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
 
 
 
