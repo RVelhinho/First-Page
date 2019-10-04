@@ -12,10 +12,14 @@ header{
 body{
     overflow-y: scroll;
     height: 200%;
-    animation: pageLoad 1.5s;
+    animation: pageLoad 1s;
 }
 
 @media all and (max-width: 1350px), all and (max-height: 300px) {
+    nav{ opacity: 0;}
+}
+
+@media all and (max-width: 1350px) {
     nav{ opacity: 0;}
 }
 
@@ -39,9 +43,16 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: darkgrey;
+    transition: color 300ms;
+}
+
 nav{
     transition: opacity 200ms;
 }
+
+
 
 nav ul{
     position: absolute;
@@ -57,11 +68,11 @@ nav li{
 }
 
 
+
 .mypic{
     position: absolute;
-    top: 45%;
-    left: 32%; 
-    transform: translate(-50%,-50%);
+    top: 180px;
+    left: 22%; 
     width: 22%;
     border: solid;
     border-radius: 100%;
@@ -72,15 +83,15 @@ nav li{
 .desc{
     font-family: 'EB Garamond', serif;
     font-weight: 400;
-    font-size: 3.1vw;
+    font-size: 2.3vw;
     color: white;
     position: absolute;
-    top: 43%;
-    left: 65%; 
-    transform: translate(-50%,-50%);
+    top: 230px;
+    left: 47%; 
     padding-bottom: 100px;
     overflow: hidden;
 }
+
 
 
 .desc2{
@@ -88,16 +99,16 @@ nav li{
     font-weight: 400;
     color: white;
     position: absolute;
-    top: 55%;
-    left: 65.5%; 
-    transform: translate(-50%,-50%);
+    top: 340px;
+    left: 47%; 
+   
+    margin-right: 250px;
 }
 
 button{
     position: absolute;
-    top: 78%;
-    left: 32%; 
-    transform: translate(-50%,-50%);
+    top: 530px;
+    left: 24%; 
     background: none;
     color: white;
     width: 240px;
@@ -105,7 +116,6 @@ button{
     border: 1px solid white;
     font-size: 18px;
     border-radius: 4px;
-    transition: .6s;
     overflow: hidden;
 }
 
@@ -115,8 +125,9 @@ button:focus{
 
 
 button:hover{
-    background: lightslategray;
+    background: grey;
     cursor: pointer;
+    transition: background 500ms;
 }
 
 button:hover:before{
@@ -132,7 +143,7 @@ button:hover:after{
 .arrow{
     color: white;
     position: absolute;
-    top: 90%;
+    top: 800px;
     left: 50%; 
     transform: translate(-50%,-50%);
     width: 25px;
