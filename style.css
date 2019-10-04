@@ -41,12 +41,15 @@ a{
     text-transform: uppercase;
     color: white;
     text-decoration: none;
+    background-color:#0b0a0d;
 }
 
 a:hover{
     color: darkgrey;
     transition: color 300ms;
 }
+
+
 
 nav{
     transition: opacity 200ms;
@@ -56,60 +59,122 @@ nav{
 
 nav ul{
     position: absolute;
+    width: 100%;
+    background-color:#0b0a0d;
     overflow: hidden;
-    left:68%;
     list-style: none;
     padding: 20px 20px;
+    padding-left: 70%;
+    box-shadow: 0 0 4px 4px;
 }
 
 nav li{
     display: inline-block;
     padding-right: 30px;
+    background-color:#0b0a0d;
 }
 
 
-
+.first_section{
+    position: absolute;
+    top: 20%;
+    left: 27%; 
+    transform: translate(-5%,0%);
+    transition: transform .6s;
+    padding: 20px 20px;
+    background-color: #0b0a0d;
+    box-shadow: 0 0 4px 4px;
+}
 .mypic{
-    position: absolute;
-    top: 180px;
-    left: 22%; 
-    width: 22%;
-    border: solid;
-    border-radius: 100%;
-    border-width: 50%;
-    border-color: azure;
+    width: 20%;
 }
 
-.desc{
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    font-size: 2.3vw;
-    color: white;
+.nome1{
     position: absolute;
-    top: 230px;
-    left: 47%; 
+    top: 3%;
+    left: 23%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+    background-color: #0b0a0d;
     padding-bottom: 100px;
     overflow: hidden;
 }
 
-
+.nome2{
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.1vw;
+    color: white;
+    background-color: #0b0a0d;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
 
 .desc2{
+    position: absolute;
+    top: 55%;
+    left: 23%;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     color: white;
+    background-color: #0b0a0d;
+    letter-spacing: .01cm;
+    overflow: hidden;
+}
+
+.second_section{
+    width: 37%;
+    height: 20%;
     position: absolute;
-    top: 340px;
-    left: 47%; 
-   
-    margin-right: 250px;
+    top: 50%;
+    left: 26.2%; 
+    transform: translate(-5%,0%);
+    transition: transform .6s;
+    padding: 20px 20px;
+    background-color: #0b0a0d;
+    box-shadow: 0 0 4px 4px;
+}
+
+
+.social_media{
+    position: absolute;
+    background-color: #0b0a0d;
+    top: 50%;
+    left: 40%;
+}
+
+.facebook, .linkedin, .github{
+    padding-right: 25px;
+}
+
+.git2{
+    border: none;
+    border-radius: 100%;
+}
+
+.social_media1{
+    background-color: #0b0a0d;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4vw;
+    color: white;
 }
 
 button{
     position: absolute;
-    top: 530px;
-    left: 24%; 
-    background: none;
+    top: 50%;
+    left: 65%; 
+    transform: translate(-5%,0%);
+    transition: transform .6s;
+    background: #0b0a0d;
     color: white;
     width: 240px;
     height: 80px;
@@ -125,7 +190,7 @@ button:focus{
 
 
 button:hover{
-    background: grey;
+    background: #202020;
     cursor: pointer;
     transition: background 500ms;
 }
@@ -140,48 +205,29 @@ button:hover:after{
     transition: .7s;
 }
 
+.button1{
+    top: 50%;
+    left: 65%; 
+}
+
+.button2{
+    top: 61.5%;
+    left: 65%; 
+}
+
+
+
 .arrow{
     color: white;
     position: absolute;
-    top: 800px;
-    left: 50%; 
+    top: 86%;
+    left: 49.3%; 
     transform: translate(-50%,-50%);
     width: 25px;
     height: 25px;
     transition: 0.5s;
     box-shadow: -2px 2px 0 white;
     transform: rotate(-45deg);
-}
-
-
-
-.second_section p{
-    font-family: 'Poppins', serif;
-    font-weight: 400;
-    font-size: 3.1vw;
-    color: white;
-    position: absolute;
-    top: 145%;
-    left: 50%; 
-    transform: translate(-50%,-50%);
-    padding-bottom: 100px;
-    overflow: hidden;
-}
-
-.social_media{
-    position: absolute;
-    top: 160%;
-    left: 61%; 
-    transform: translate(-50%,-50%);
-}
-
-.facebook, .linkedin, .github{
-    padding-right: 25px;
-}
-
-.git2{
-    border: none;
-    border-radius: 100%;
 }
 
 footer{
