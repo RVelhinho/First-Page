@@ -58,7 +58,7 @@ nav{
 
 
 nav ul{
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color:#0b0a0d;
     overflow: hidden;
@@ -76,29 +76,32 @@ nav li{
 
 
 .first_section{
-    position: absolute;
-    top: 20%;
-    left: 27%; 
+    position: relative;
+    margin-top: 7%;
+    margin-left: 27%;       
+    max-width: 52.5%;
+    max-height: 25%;
     transform: translate(-5%,0%);
     transition: transform .6s;
-    padding: 20px 20px;
     background-color: #0b0a0d;
     box-shadow: 0 0 4px 4px;
+    overflow: hidden;
 }
 .mypic{
+    box-sizing: border-box;
     width: 20%;
+    height: 100%;
 }
 
 .nome1{
     position: absolute;
-    top: 3%;
+    top: 0%;
     left: 23%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 2vw;
     color: white;
     background-color: #0b0a0d;
-    padding-bottom: 100px;
     overflow: hidden;
 }
 
@@ -121,35 +124,46 @@ nav li{
     left: 23%;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
+    font-size: 1vw;
     color: white;
     background-color: #0b0a0d;
-    letter-spacing: .01cm;
     overflow: hidden;
 }
 
 .second_section{
-    width: 37%;
-    height: 20%;
-    position: absolute;
-    top: 50%;
-    left: 26.2%; 
+    max-width: 37%;
+    width: 50%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 26.2%;
+    margin-right: 0%;    
     transform: translate(-5%,0%);
     transition: transform .6s;
-    padding: 20px 20px;
+    padding: 65px 0px;
     background-color: #0b0a0d;
     box-shadow: 0 0 4px 4px;
 }
 
 
-.social_media{
+.facebook{
     position: absolute;
     background-color: #0b0a0d;
     top: 50%;
-    left: 40%;
+    left: 30%;
 }
 
-.facebook, .linkedin, .github{
-    padding-right: 25px;
+.linkedin{
+    position: absolute;
+    background-color: #0b0a0d;
+    top: 50%;
+    left: 50%;
+}
+
+.github{
+    position: absolute;
+    background-color: #0b0a0d;
+    top: 50%;
+    left: 70%;
 }
 
 .git2{
@@ -161,25 +175,21 @@ nav li{
     background-color: #0b0a0d;
     position: absolute;
     top: 10%;
-    left: 25%;
+    left: 22%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     color: white;
 }
 
 button{
-    position: absolute;
-    top: 50%;
-    left: 65%; 
     transform: translate(-5%,0%);
     transition: transform .6s;
     background: #0b0a0d;
     color: white;
-    width: 240px;
-    height: 80px;
+    width: 35%;
+    height: 40%;
     border: 1px solid white;
-    font-size: 18px;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -206,13 +216,19 @@ button:hover:after{
 }
 
 .button1{
-    top: 50%;
-    left: 65%; 
+    position: absolute; 
+    top: 5%;
+    left: 110%;
+    font-size: 1vw;
+    padding: 15px 15px;
 }
 
 .button2{
-    top: 61.5%;
-    left: 65%; 
+    position: absolute; 
+    top: 55%;
+    left: 110%;
+    font-size: 1vw;
+    padding: 15px 15px;
 }
 
 
