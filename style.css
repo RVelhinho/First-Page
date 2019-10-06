@@ -79,11 +79,11 @@ body{
         overflow: hidden;
     }
     body .second_section{
-        width: 60%;
+        width: 85%;
         height: 100%;
         position: relative;
-        margin-top: 10%;
-        margin-left: 11%;
+        margin-top: 13%;
+        margin-left: 12%;
         margin-right: 0%;    
         transform: translate(-5%,0%);
         transition: transform .6s;
@@ -131,27 +131,39 @@ body{
         background-color: #0b0a0d;
         position: absolute;
         top: 10%;
-        left: 15%;
+        left: 25%;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 3vw;
         color: white;
     }
 
+    .second_section button{
+        transform: translate(-5%,0%);
+        transition: transform .6s;
+        background: #0b0a0d;
+        color: white;
+        width: 47%;
+        height: 45%;
+        border: 1px solid white;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
     .second_section .button1{
         position: absolute; 
-        top: 5%;
-        left: 110%;
-        font-size: 2vw;
-        padding: 15px 15px;
+        top: 150%;
+        left: 2%;
+        font-size: 2.6vw;
+        
     }
     
     .second_section .button2{
         position: absolute; 
-        top: 55%;
-        left: 110%;
-        font-size: 2vw;
-        padding: 15px 15px;
+        top: 150%;
+        left: 56%;
+        font-size: 3vw;
+        
     }
 }
 @media all and (max-width: 641px) {
