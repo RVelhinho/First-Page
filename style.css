@@ -7,21 +7,162 @@
 
 header{
     width: 100%;
+    height: 20%;
 }
 
 body{
     overflow-y: scroll;
-    height: 200%;
+    width: 100%;
+    height: 50%;
     animation: pageLoad 1s;
 }
 
-@media all and (max-width: 1350px), all and (max-height: 300px) {
+
+@media all and (max-width: 1400px), all and (max-height: 300px) {
     nav{ opacity: 0;}
 }
 
-@media all and (max-width: 1350px) {
+@media all and (max-width: 1400px) {
     nav{ opacity: 0;}
+
+
 }
+
+@media all and (max-width: 1150px) {
+    nav{display: none;}
+    body .first_section{
+        width: 85%;
+        position: relative;
+        margin-top: 15%;
+        margin-left: 12%;       
+        transform: translate(-5%,0%);
+        transition: transform .6s;
+        background-color: #0b0a0d;
+        box-shadow: 0 0 4px 4px;
+        overflow: hidden;
+    }
+    body .first_section .nome1{
+        position: absolute;
+        top: 0%;
+        left: 23%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 4vw;
+        color: white;
+        background-color: #0b0a0d;
+        overflow: hidden;
+    }
+    
+    body .first_section .nome2{
+        position: absolute;
+        top: 35%;
+        left: 23%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 3vw;
+        color: white;
+        background-color: #0b0a0d;
+        padding-bottom: 100px;
+        overflow: hidden;
+    }
+    
+    body .first_section .desc2{
+        display: none;
+        position: absolute;
+        top: 55%;
+        left: 23%;
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+        font-size: 1vw;
+        color: white;
+        background-color: #0b0a0d;
+        overflow: hidden;
+    }
+    body .second_section{
+        width: 60%;
+        height: 100%;
+        position: relative;
+        margin-top: 10%;
+        margin-left: 11%;
+        margin-right: 0%;    
+        transform: translate(-5%,0%);
+        transition: transform .6s;
+        padding: 65px 0px;
+        background-color: #0b0a0d;
+        box-shadow: 0 0 4px 4px;
+    }
+
+    .second_section .facebook{
+        position: absolute;
+        background-color: #0b0a0d;
+        top: 50%;
+        left: 15%;
+    }
+    
+    .second_section .linkedin{
+        position: absolute;
+        background-color: #0b0a0d;
+        top: 52%;
+        left: 45%;
+    }
+    
+    .second_section .github{
+        position: absolute;
+        background-color: #0b0a0d;
+        top: 52%;
+        left: 72%;
+    }
+
+    .second_section .face2{
+        width: 10%;
+    }
+    
+    .second_section .link2{
+        width: 12%;
+    }
+
+    body .second_section .git2{
+        width: 28%;
+        border: none;
+        border-radius: 100%;
+    }
+    
+    .second_section .social_media1{
+        background-color: #0b0a0d;
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 3vw;
+        color: white;
+    }
+
+    .second_section .button1{
+        position: absolute; 
+        top: 5%;
+        left: 110%;
+        font-size: 2vw;
+        padding: 15px 15px;
+    }
+    
+    .second_section .button2{
+        position: absolute; 
+        top: 55%;
+        left: 110%;
+        font-size: 2vw;
+        padding: 15px 15px;
+    }
+}
+@media all and (max-width: 641px) {
+}
+@media all and (max-width: 481px) {
+}
+@media all and (max-width: 380px) {
+}
+
+
+
 
 
 
@@ -53,6 +194,7 @@ a:hover{
 
 nav{
     transition: opacity 200ms;
+    transition: display 200ms;
 }
 
 
@@ -79,8 +221,8 @@ nav li{
     position: relative;
     margin-top: 7%;
     margin-left: 27%;       
-    max-width: 52.5%;
-    max-height: 25%;
+    width: 52.5%;
+    height: 25%;
     transform: translate(-5%,0%);
     transition: transform .6s;
     background-color: #0b0a0d;
@@ -131,8 +273,8 @@ nav li{
 }
 
 .second_section{
-    max-width: 37%;
-    width: 50%;
+    width: 37%;
+    height: 20%;
     position: relative;
     margin-top: 5%;
     margin-left: 26.2%;
