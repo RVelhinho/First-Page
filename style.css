@@ -13,7 +13,6 @@ header{
 body{
     overflow-y: scroll;
     width: 100%;
-    height: 50%;
     animation: pageLoad 1s;
 }
 
@@ -29,227 +28,12 @@ body{
 }
 
 @media all and (max-width: 1150px) {
-    nav{display: none;}
-    body .first_page .first_section{
-        width: 65%;
-        position: relative;
-        margin-top: 15%;
-        margin-left: 20%;       
-        transform: translate(-5%,0%);
-        transition: transform .6s;
-        background-color: #0b0a0d;
-        box-shadow: 0 0 4px 4px;
-        overflow: hidden;
-    }
-    .first_page .first_section .mypic{
-        box-sizing: border-box;
-        width: 40%;
-        height: 100%;
-    }
-    body .first_page .first_section .nome1{
-        position: absolute;
-        top: 0%;
-        left: 42%;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 4vw;
-        color: white;
-        background-color: #0b0a0d;
-        overflow: hidden;
-    }
     
-    body .first_page .first_section .nome2{
-        position: absolute;
-        top: 30%;
-        left: 42%;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 3vw;
-        color: white;
-        background-color: #0b0a0d;
-        padding-bottom: 100px;
-        overflow: hidden;
-    }
-    
-    body .first_page .first_section .desc2{
-        display: none;
-        position: absolute;
-        top: 55%;
-        left: 23%;
-        font-family: 'EB Garamond', serif;
-        font-weight: 400;
-        font-size: 1vw;
-        color: white;
-        background-color: #0b0a0d;
-        overflow: hidden;
-    }
-    body .first_page .second_section{
-        width: 65%;
-        position: relative;
-        margin-top: 13%;
-        margin-left: 20%;
-        margin-right: 0%;    
-        transform: translate(-5%,0%);
-        transition: transform .6s;
-        padding: 100px 0px;
-        background-color: #0b0a0d;
-        box-shadow: 0 0 4px 4px;
-    }
-
-    .first_page .second_section .face2{
-        position: absolute;
-        background-color: #0b0a0d;
-        top: 50%;
-        left: 27%;
-        width: 10%;
-    }
-    
-    .first_page .second_section .link2{
-        position: absolute;
-        background-color: #0b0a0d;
-        top: 50%;
-        left: 45%;
-        width: 10%;
-    }
-    
-    .first_page .second_section .git2{
-        width: 10%;
-        position: absolute;
-        background-color: #0b0a0d;
-        top: 50%;
-        left: 65%;
-        border: none;
-        border-radius: 100%;
-    }
-    
-    .first_page .second_section .social_media1{
-        background-color: #0b0a0d;
-        position: absolute;
-        top: 10%;
-        left: 17%;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 3vw;
-        color: white;
-    }
-
-    .first_page .second_section button{
-        transform: translate(-5%,0%);
-        transition: transform .6s;
-        background: #0b0a0d;
-        color: white;
-        width: 47%;
-        height: 45%;
-        border: 1px solid white;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-
-    .first_page .second_section .button1{
-        position: absolute; 
-        top: 150%;
-        left: 2%;
-        font-size: 2.6vw;
-        
-    }
-    
-    .first_page .second_section .button2{
-        position: absolute; 
-        top: 150%;
-        left: 56%;
-        font-size: 3vw;
-        
-    }
 }
 @media all and (max-width: 641px) {
-    body .first_page .first_section{
-        width: 85%;
-        position: relative;
-        margin-top: 15%;
-        margin-left: 12%;       
-        transform: translate(-5%,0%);
-        transition: transform .6s;
-        background-color: #0b0a0d;
-        box-shadow: 0 0 4px 4px;
-        overflow: hidden;
-    }
-    body .first_page .first_section .nome1{
-        position: absolute;
-        top: 0%;
-        left: 42%;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 5vw;
-        color: white;
-        background-color: #0b0a0d;
-        overflow: hidden;
-    }
-
-    body .first_page .first_section .nome2{
-        position: absolute;
-        top: 25%;
-        left: 42%;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 4vw;
-        color: white;
-        background-color: #0b0a0d;
-        padding-bottom: 100px;
-        overflow: hidden;
-    }
-    body .first_page .second_section{
-        width: 85%;
-        position: relative;
-        margin-top: 13%;
-        margin-left: 12%;
-        margin-right: 0%;    
-        transform: translate(-5%,0%);
-        transition: transform .6s;
-        padding: 60px 0px;
-        background-color: #0b0a0d;
-        box-shadow: 0 0 4px 4px;
-    }
-
-    .first_page .second_section .social_media1{
-        background-color: #0b0a0d;
-        position: absolute;
-        top: 10%;
-        left: 20%;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-size: 4vw;
-        color: white;
-    }
-
-    .first_page .second_section .button1{
-        position: absolute; 
-        top: 150%;
-        left: 2%;
-        font-size: 4vw;
-        
-    }
     
-    .first_page .second_section .button2{
-        position: absolute; 
-        top: 150%;
-        left: 56%;
-        font-size: 4vw;
-        
-    }
 }
 @media all and (max-width: 481px) {
-    body .first_page .second_section{
-        width: 85%;
-        position: relative;
-        margin-top: 13%;
-        margin-left: 12%;
-        margin-right: 0%;    
-        transform: translate(-5%,0%);
-        transition: transform .6s;
-        padding: 65px 0px;
-        background-color: #0b0a0d;
-        box-shadow: 0 0 4px 4px;
-    }
 }
 
 /*
@@ -271,7 +55,7 @@ body{
     }
 }
 
-
+/*
 a{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -310,22 +94,38 @@ nav li{
     display: inline-block;
     padding-right: 30px;
     background-color:#0b0a0d;
+}*/
+
+.first_page{
+    height: 800px;
+    background-image: radial-gradient(#4B4B4B, #0b0a0d 70%);
+}
+
+.second_page{
+    height: 800px;
+    background-image: linear-gradient(to bottom right,red, #EEEA77);
+}
+
+.third_page{
+    height: 800px;
+    background-image: linear-gradient(to bottom,#82B8E8, white);
 }
 
 
 .first_page .first_section{
     position: relative;
-    margin-top: 2%;
+    margin-top: 0%;
     margin-left: 20%;       
     width: 70%;
     height: 700px;
     transform: translate(-5%,0%);
     transition: transform .6s;
     overflow: hidden;
+    background: none;
 }
 .mypic{
     position: absolute;
-    top: 20%;
+    top: 26%;
     left: 5%;
     box-sizing: border-box;
     width: 27%;
@@ -335,18 +135,19 @@ nav li{
 
 .nome1{
     position: absolute;
-    top: 20%;
+    top: 26%;
     left: 35%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 2.5vw;
     color: white;
     overflow: hidden;
+    background: none;
 }
 
 .nome2{
     position: absolute;
-    top: 30%;
+    top: 36%;
     left: 35%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -354,17 +155,19 @@ nav li{
     color: white;
     padding-bottom: 100px;
     overflow: hidden;
+    background: none;
 }
 
 .desc2{
     position: absolute;
-    top: 45%;
+    top: 52%;
     left: 35%;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-size: 1.4vw;
     color: white;
     overflow: hidden;
+    background: none;
 }
 
 button{
@@ -402,7 +205,7 @@ button:hover:after{
 
 .button1{
     position: absolute; 
-    top: 70%;
+    top: 76%;
     left: 36%;
     font-size: 1.3vw;
     padding: 15px 15px;
@@ -410,7 +213,7 @@ button:hover:after{
 
 .button2{
     position: absolute; 
-    top: 70%;
+    top: 76%;
     left: 60%;
     font-size: 1.3vw;
     padding: 15px 15px;
@@ -433,37 +236,40 @@ button:hover:after{
 
 .second_page .first_section{
     position: relative;
-    margin-top: 10%;
+    margin-top: 0%;
     margin-left: 0%;
     transform: translate(-5%,0%);
     transition: transform .6s;
     width: 100%;
     height: 200px;
+    background: none;
 }
 
 
 .second_page .first_section .p1{
     position: absolute;
-    top: 0%;
+    top: 50%;
     left: 45%;
     font-family: 'Poppins';
     font-size: 2vw;
     color: white;
     transform: translate(-5%,0%);
     transition: transform .6s;
+    background: none;
 }
 
 
 .second_page .first_section .p2{
     position: absolute;
     left: 35%;
-    top: 30%;
+    top: 80%;
     width: 50%;
     font-family: 'Poppins';
     font-size: 1.1vw;
     color: #CDCBCB;
     transform: translate(-5%,0%);
     transition: transform .6s;
+    background: none;
 }
 
 .second_page .second_section{
@@ -474,15 +280,17 @@ button:hover:after{
     transition: transform .6s;
     width: 100%;
     height: 300px;
+    background: none;
 }
 
 .game_img{
     position: absolute;
+    top: 40%;
     left: 42%;
     width: 25%;
     height: 200px;
     box-shadow: 0 0 4px 4px;
-    background-color: #0b0a0d;
+    background-color: #0b0a0d;;
 }
 
 .second_page .second_section img{
@@ -495,7 +303,7 @@ button:hover:after{
 
 .second_page .second_section p{
     position: absolute;
-    top: 68%;
+    top: 108%;
     left: 42%;
     font-family: 'Poppins';
     font-size: 2vw;
@@ -503,7 +311,8 @@ button:hover:after{
     color: #CDCBCB;
     box-shadow: 0 0 4px 4px  #0b0a0d;
     background-color: #FF4E18;
-    width: 25.1%;
+    width: 25.01%;
+    background: none;
 }
 
 .second_page .second_section p:hover{
@@ -515,57 +324,60 @@ button:hover:after{
 
 .third_page .first_section{
     position: relative;
-    margin-top: 10%;
+    margin-top: 0%;
     width: 100%;
     height: 300px;
     transform: translate(-5%,0%);
     transition: transform .6s;
+    background: none;
 }
 
 .face2{
     position: absolute;
-    top: 100%;
+    top: 130%;
     left: 31%;
     width: 7%;
+    background: none;
 }
 
 .link2{
     position: absolute;
-    top: 100%;
+    top: 130%;
     left: 51%;
     width: 7%;
+    background: none;
 }
 
 .git2{
     position: absolute;
-    top: 100%;
+    top: 130%;
     left: 71%;
     width: 7%;
     border: none;
     border-radius: 100%;
+    background: none;
 }
 
 .social_media1{
     position: absolute;
-    top: 35%;
+    top: 60%;
     left: 41%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 2vw;
     color: white;
+    background: none;
 }
 
-footer{
-    position: relative;
+.footer p{
+    position: absolute;
+    top: 250%;
+    left: 55%; 
     font-family: 'Poppins', serif;
     font-size: 1.1vw;
-    color: lightgrey;
-    position: absolute;
-    top: 299%;
-    left: 50%; 
+    color: #24252A;
     transform: translate(-50%,-50%);
-    padding-bottom: 5%;
-    overflow: hidden;
+    background: none;
 }
 
 
