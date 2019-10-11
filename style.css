@@ -23,8 +23,7 @@ body{
 
 @media all and (max-width: 1400px) {
     nav{ opacity: 0;}
-
-
+    
 }
 
 @media all and (max-width: 1150px) {
@@ -76,12 +75,21 @@ body{
     font-size: 1.3vw;
     color: white;
     background: none;
+    transition: opacity .6s;
     transition: font-size .6s;
     text-shadow: 1px 1px #24252A;
 }
 
+.nav li:hover{ 
+    cursor: pointer;
+}
+
 #li1{
     font-size: 2.5vw;
+}
+
+#li2, #li3{
+    opacity: .5;
 }
 
 .first_page{
@@ -250,19 +258,19 @@ button:hover:after{
 .second_page .second_section{
     position: relative;
     margin-top: 0%;
-    margin-left: 0%;
+    margin-left: 25%;
     transform: translate(-5%,0%);
     transition: transform .6s;
-    width: 100%;
+    width: 60%;
     height: 300px;
     background: none;
 }
 
 .game_img{
     position: absolute;
-    top: 40%;
-    left: 42%;
-    width: 25%;
+    top: 35%;
+    left: 25%;
+    width: 45%;
     height: 200px;
     box-shadow: 0 0 4px 4px;
     background-color: #0b0a0d;;
@@ -278,15 +286,15 @@ button:hover:after{
 
 .second_page .second_section p{
     position: absolute;
-    top: 108%;
-    left: 42%;
+    top: 102%;
+    left: 25%;
     font-family: 'Poppins';
     font-size: 2vw;
     text-align: center;
     color: #CDCBCB;
     box-shadow: 0 0 4px 4px  #0b0a0d;
     background-color: #FF4E18;
-    width: 25.01%;
+    width: 45%;
     background: none;
 }
 
@@ -300,7 +308,8 @@ button:hover:after{
 .third_page .first_section{
     position: relative;
     margin-top: 0%;
-    width: 100%;
+    margin-left: 10%;
+    width: 70%;
     height: 300px;
     transform: translate(-5%,0%);
     transition: transform .6s;
@@ -310,7 +319,7 @@ button:hover:after{
 .face2{
     position: absolute;
     top: 130%;
-    left: 31%;
+    left: 38%;
     width: 7%;
     background: none;
 }
@@ -318,7 +327,7 @@ button:hover:after{
 .link2{
     position: absolute;
     top: 130%;
-    left: 51%;
+    left: 58%;
     width: 7%;
     background: none;
 }
@@ -326,7 +335,7 @@ button:hover:after{
 .git2{
     position: absolute;
     top: 130%;
-    left: 71%;
+    left: 78%;
     width: 7%;
     border: none;
     border-radius: 100%;
@@ -336,7 +345,7 @@ button:hover:after{
 .social_media1{
     position: absolute;
     top: 60%;
-    left: 41%;
+    left: 43%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 2vw;
@@ -348,7 +357,7 @@ button:hover:after{
 .footer p{
     position: absolute;
     top: 250%;
-    left: 55%; 
+    left: 62.5%; 
     font-family: 'Poppins', serif;
     font-size: 1.1vw;
     color: #24252A;
