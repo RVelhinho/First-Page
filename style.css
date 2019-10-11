@@ -267,6 +267,10 @@ body{
 }
 @media all and (max-width: 780px) {
     .nav{ opacity: 0;}
+
+    body{
+        overflow: auto;
+    }
     
     body .first_page .first_section{
         position: absolute;
