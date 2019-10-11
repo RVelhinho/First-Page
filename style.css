@@ -514,6 +514,7 @@ body{
 @media all and (max-width: 500px) {
     body .first_page .first_section{
         position: absolute;
+        top: -15%;
         left: 20%;    
         width: 80%;
         height: 720px;
