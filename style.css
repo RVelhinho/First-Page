@@ -12,7 +12,6 @@ header{
 body{
     width: 100%;
     overflow: hidden;
-    animation: pageLoad 1s;
     transition: scroll .6s;
 }
 
@@ -22,12 +21,12 @@ body{
         overflow: auto;
     }
     .nav{ opacity: 0;}
+    .nav_helper{opacity: 0;}
 }
 
-@media all and (max-width: 1100px) {
-
+@media all and (max-width: 1450px) {
     body .nav li{
-        margin-top: 20%;
+        margin-top: 25%;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 1.3vw;
@@ -37,6 +36,81 @@ body{
         transition: font-size .6s;
         text-shadow: 1px 1px #24252A;
     }
+    body .nav ul{
+        position: fixed;
+        top: 29%;
+        left: -3%;
+        list-style: none;
+        background: none;
+        z-index: 1;
+    }
+}
+@media all and (max-width: 1300px) {
+    body .nav li{
+        margin-top: 30%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.3vw;
+        color: white;
+        background: none;
+        transition: opacity .6s;
+        transition: font-size .6s;
+        text-shadow: 1px 1px #24252A;
+    }
+
+    body .nav ul{
+        position: fixed;
+        top: 28%;
+        left: -3%;
+        list-style: none;
+        background: none;
+        z-index: 1;
+    }
+
+    body .nav_helper{
+        position: fixed;
+        top: 34%;
+        left: 1%;
+        width: .8%;
+        height: 30px;
+        z-index: 1;
+        border: solid #24252A;
+        border-radius: 35%;
+        background-color: white;
+        transition: top .3s;
+    }
+}
+@media all and (max-width: 1200px) {
+    body .nav li{
+        margin-top: 33%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.3vw;
+        color: white;
+        background: none;
+        transition: opacity .6s;
+        transition: font-size .6s;
+        text-shadow: 1px 1px #24252A;
+    }
+
+    body .nav ul{
+        position: fixed;
+        top: 28%;
+        left: -3%;
+        list-style: none;
+        background: none;
+        z-index: 1;
+    }
+
+}
+
+@media all and (max-width: 1100px) {
+
+    body{
+        overflow: auto;
+    }
+    .nav{ display: none;}
+    .nav_helper{display: none;}
 
     body .first_page .first_section{
         position: absolute;
@@ -48,9 +122,9 @@ body{
         overflow: hidden;
         background: none;
     }
-    body .mypic{
+    body .mypic.is_visible{
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: -10%;
         box-sizing: border-box;
         width: 35%;
@@ -58,15 +132,13 @@ body{
         border-radius: 50%;
     }
 
-    body .text{
-        opacity: 0;
+    body .text.is_visible{
         position: absolute;
         top: 20%;
-        left: 65%;
+        left: 85%;
         width: 80%;
         height: 350px;
         background: none;
-        animation: textLoad 1s forwards .6s;
     }
 
     body .nome1{
@@ -94,6 +166,9 @@ body{
 
     body .desc2{
         position: absolute;
+        top: 80%;
+        left: -55%;
+        width: 100%;
         font-family: 'EB Garamond', serif;
         font-weight: 400;
         font-size: 1.8vw;
@@ -114,18 +189,18 @@ body{
         overflow: hidden;
     }
 
-    body .button1{
+    body .button1.is_visible{
         position: absolute; 
         top: 90%;
-        left: 45%;
+        left: 20%;
         font-size: 1.5vw;
         padding: 15px 15px;
     }
 
-    body .button2{
+    body .button2.is_visible{
         position: absolute; 
         top: 90%;
-        left: 69%;
+        left: 60%;
         font-size: 1.5vw;
         padding: 15px 15px;
     }
@@ -171,7 +246,7 @@ body{
     body .second_page .second_section{
         position: absolute;
         top: 35%;
-        left: 24%;
+        left: -9%;
         transform: translate(-5%,0%);
         transition: transform .6s;
         width: 60%;
@@ -228,7 +303,7 @@ body{
         background: none;
     }
 
-    body .face2{
+    body .face2.is_visible{
         position: absolute;
         top: 130%;
         left: 38%;
@@ -236,7 +311,7 @@ body{
         background: none;
     }
 
-    body .link2{
+    body .link2.is_visible{
         position: absolute;
         top: 130%;
         left: 58%;
@@ -244,7 +319,7 @@ body{
         background: none;
     }
 
-    body  .git2{
+    body  .git2.is_visible{
         position: absolute;
         top: 130%;
         left: 78%;
@@ -254,7 +329,7 @@ body{
         background: none;
     }
 
-    body .social_media1{
+    body .social_media1.is_visible{
         position: absolute;
         top: 60%;
         left: 35%;
@@ -282,47 +357,40 @@ body{
 
 }
 @media all and (max-width: 780px) {
-    .nav{ opacity: 0;}
-
-    body{
-        overflow: auto;
-    }
     
     body .first_page .first_section{
         position: absolute;
         left: 20%;    
-        width: 80%;
+        width: 100%;
         height: 720px;
         transform: translate(-5%,0%);
         transition: transform .6s;
         overflow: hidden;
         background: none;
     }
-    body .mypic{
+    body .mypic.is_visible{
         position: absolute;
-        top: 10%;
-        left: 10%;
-        width: 35%;
+        top: 25%;
+        left: -15%;
+        width: 30%;
         box-sizing: border-box;
         border: solid #CDCBCB;
         border-radius: 50%;
     }
 
-    body .text{
-        opacity: 0;
+    body .text.is_visible{
         position: absolute;
-        top: 20%;
-        left: 20%;
+        top: 23%;
+        left: 80%;
         width: 80%;
         height: 350px;
         background: none;
-        animation: textLoad 1s forwards .6s;
     }
 
     body .nome1{
         position: absolute;
-        top: 39%;
-        left: 10%;
+        top: 10%;
+        left: -20%;
         width: 100%;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
@@ -335,11 +403,12 @@ body{
 
     body .nome2{
         position: absolute;
-        top: 55%;
-        left: 20%;
+        top: 30%;
+        left: -20%;
+        width: 50%;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 2.5vw;
+        font-size: 3vw;
         color: white;
         padding-bottom: 100px;
         overflow: hidden;
@@ -349,9 +418,9 @@ body{
 
     body .desc2{
         position: absolute;
-        top: 90%;
-        left: 5%;
-        width: 80%;
+        top: 75%;
+        left: -50%;
+        width: 70%;
         font-family: 'EB Garamond', serif;
         font-weight: 400;
         font-size: 2.5vw;
@@ -372,26 +441,26 @@ body{
         overflow: hidden;
     }
 
-    body .button1{
+    body .button1.is_visible{
         position: absolute; 
-        top: 96%;
-        left: 15%;
+        top: 90%;
+        left: 8%;
         font-size: 2vw;
         padding: 15px 15px;
     }
 
-    body .button2{
+    body .button2.is_visible{
         position: absolute; 
-        top: 96%;
-        left: 55%;
+        top: 90%;
+        left: 48%;
         font-size: 2vw;
         padding: 15px 15px;
     }
-    body .second_page .first_section{
+    body .second_page .first_section.is_visible{
         position: absolute;
-        margin-top: 0%;
-        margin-left: 0%;
-        transform: translate(-5%,0%);
+        top: 0%;
+        left: 30%;
+        transform: translate(-30%,0%);
         transition: transform .6s;
         width: 100%;
         height: 200px;
@@ -419,7 +488,7 @@ body{
         top: 85%;
         width: 50%;
         font-family: 'Poppins';
-        font-size: 2vw;
+        font-size: 2.5vw;
         color: #CDCBCB;
         transform: translate(-5%,0%);
         transition: transform .6s;
@@ -429,7 +498,7 @@ body{
     body .second_page .second_section{
         position: absolute;
         top: 35%;
-        left: 24%;
+        left: -9%;
         transform: translate(-5%,0%);
         transition: transform .6s;
         width: 60%;
@@ -486,7 +555,7 @@ body{
         background: none;
     }
 
-    body .face2{
+    body .face2.is_visible{
         position: absolute;
         top: 130%;
         left: 35%;
@@ -494,7 +563,7 @@ body{
         background: none;
     }
 
-    body .link2{
+    body .link2.is_visible{
         position: absolute;
         top: 130%;
         left: 58%;
@@ -502,7 +571,7 @@ body{
         background: none;
     }
 
-    body  .git2{
+    body  .git2.is_visible{
         position: absolute;
         top: 130%;
         left: 82%;
@@ -512,7 +581,7 @@ body{
         background: none;
     }
 
-    body .social_media1{
+    body .social_media1.is_visible{
         position: absolute;
         top: 60%;
         left: 25%;
@@ -550,31 +619,29 @@ body{
         overflow: hidden;
         background: none;
     }
-    body .mypic{
+    body .mypic.is_visible{
         position: absolute;
-        top: 20%;
-        left: 7%;
-        width: 40%;
+        top: 35%;
+        left: -15%;
+        width: 35%;
         box-sizing: border-box;
         border: solid #CDCBCB;
         border-radius: 50%;
     }
 
-    body .text{
-        opacity: 0;
+    body .text.is_visible{
         position: absolute;
-        top: 20%;
-        left: 20%;
+        top: 6%;
+        left: 65%;
         width: 80%;
         height: 350px;
         background: none;
-        animation: textLoad 1s forwards .6s;
     }
-    
+
     body .nome1{
         position: absolute;
-        top: 45%;
-        left: 15%;
+        top: 70%;
+        left: 10%;
         width: 100%;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
@@ -587,11 +654,12 @@ body{
 
     body .nome2{
         position: absolute;
-        top: 60%;
-        left: 17%;
+        top: 85%;
+        left: 20%;
+        width: 70%;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 2.8vw;
         color: white;
         padding-bottom: 100px;
         overflow: hidden;
@@ -601,12 +669,12 @@ body{
 
     body .desc2{
         position: absolute;
-        top: 98%;
-        left: 10%;
-        width: 80%;
+        top: 130%;
+        left: -30%;
+        width: 90%;
         font-family: 'EB Garamond', serif;
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 3vw;
         color: white;
         overflow: hidden;
         background: none;
@@ -624,26 +692,26 @@ body{
         overflow: hidden;
     }
 
-    body .button1{
+    body .button1.is_visible{
         position: absolute; 
-        top: 97%;
+        top: 90%;
         left: 12%;
         font-size: 3vw;
         padding: 15px 15px;
     }
 
-    body .button2{
+    body .button2.is_visible{
         position: absolute; 
-        top: 97%;
+        top: 90%;
         left: 52%;
         font-size: 3vw;
         padding: 15px 15px;
     }
-    body .second_page .first_section{
+    body .second_page .first_section.is_visible{
         position: absolute;
-        margin-top: 0%;
-        margin-left: 0%;
-        transform: translate(-5%,0%);
+        top: 0%;
+        left: 30%;
+        transform: translate(-30%,0%);
         transition: transform .6s;
         width: 100%;
         height: 200px;
@@ -678,10 +746,10 @@ body{
         background: none;
     }
 
-    body .second_page .second_section{
+    body .second_page .second_section.is_visible{
         position: absolute;
-        top: 40%;
-        left: 12%;
+        top: 50%;
+        left: -30%;
         transform: translate(-5%,0%);
         transition: transform .6s;
         width: 80%;
@@ -738,7 +806,7 @@ body{
         background: none;
     }
 
-    body .face2{
+    body .face2.is_visible{
         position: absolute;
         top: 130%;
         left: 25%;
@@ -746,7 +814,7 @@ body{
         background: none;
     }
 
-    body .link2{
+    body .link2.is_visible{
         position: absolute;
         top: 130%;
         left: 55%;
@@ -754,7 +822,7 @@ body{
         background: none;
     }
 
-    body  .git2{
+    body  .git2.is_visible{
         position: absolute;
         top: 130%;
         left: 85%;
@@ -764,7 +832,7 @@ body{
         background: none;
     }
 
-    body .social_media1{
+    body .social_media1.is_visible{
         position: absolute;
         top: 60%;
         left: 15%;
@@ -797,79 +865,37 @@ body{
 */
 
 
-
-
-
-
-@keyframes pageLoad{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes navLoad{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: translateX(50%);
-    }
-}
-
-
-@keyframes imgLoad{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(40%);
-    }
-}
-
-@keyframes textLoad{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(-15%);
-    }
-}
-
-@keyframes buttonLoad{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(-80%);
-    }
-}
-
 .nav{
     position: relative;
     margin-top: 0%;
     margin-left: 0%;
 }
 
-.nav ul{
+.nav_ul{
     opacity: 0;
     position: fixed;
-    top: 25%;
+    top: 30%;
     left: -3%;
     list-style: none;
     background: none;
     z-index: 1;
-    animation: navLoad 1s forwards 1.8s;
+}
+
+.nav_ul.is_visible{
+    opacity: 1;
+    position: fixed;
+    top: 30%;
+    left: -3%;
+    list-style: none;
+    background: none;
+    z-index: 1;
+    transform: translateX(50%);
+    transition: all .6s 2s;
 }
 
 .nav li{
-    margin-top: 20%;
+    position: relative;
+    margin-top: 23%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.3vw;
@@ -884,12 +910,37 @@ body{
     cursor: pointer;
 }
 
-#li1{
-    font-size: 2.5vw;
-}
-
 #li2, #li3{
     opacity: .5;
+}
+
+.nav_helper{
+    opacity: 0;
+    position: fixed;
+    top: 34%;
+    left: 1%;
+    width: .8%;
+    height: 40px;
+    z-index: 1;
+    border: solid #24252A;
+    border-radius: 35%;
+    background-color: white;
+    transition: top .3s;
+}
+
+
+.nav_helper.is_visible{
+    opacity: 1;
+    position: fixed;
+    top: 34%;
+    left: 1%;
+    width: .8%;
+    height: 40px;
+    z-index: 1;
+    border: solid #24252A;
+    border-radius: 35%;
+    background-color: white;
+    transition: opacity .6s 2.5s, top .3s;
 }
 
 .first_page{
@@ -914,7 +965,7 @@ body{
 .first_page .first_section{
     position: absolute;
     left: 13%;    
-    width: 75%;
+    width: 85%;
     height: 700px;
     overflow: hidden;
     background: none;
@@ -929,18 +980,41 @@ body{
     width: 27%;
     border: solid #CDCBCB;
     border-radius: 50%;
-    animation: imgLoad 1s forwards .6s;
+}
+
+.mypic.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 28%;
+    left: 0%;
+    box-sizing: border-box;
+    width: 27%;
+    border: solid #CDCBCB;
+    border-radius: 50%;
+    transform: translateX(55%);
+    transition: all .6s 1s;
 }
 
 .text{
     opacity: 0;
     position: absolute;
     top: 25%;
-    left: 65%;
+    left: 90%;
     width: 100%;
     height: 350px;
     background: none;
-    animation: textLoad 1s forwards .6s;
+}
+
+.text.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 25%;
+    left: 90%;
+    width: 100%;
+    height: 350px;
+    background: none;
+    transform: translateX(-35%);
+    transition: all .6s 1s;
 }
 
 .nome1{
@@ -960,7 +1034,7 @@ body{
     position: absolute;
     top: 30%;
     left: -10%;
-    width: 60%;
+    width: 55%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.6vw;
@@ -985,7 +1059,6 @@ body{
 }
 
 button{
-    opacity: 0;
     background: #0b0a0d;
     color: white;
     width: 20%;
@@ -993,8 +1066,8 @@ button{
     border: 1px solid white;
     border-radius: 4px;
     overflow: hidden;
-    animation: buttonLoad 1s forwards 1.2s;
 }
+
 
 button:focus{
     outline: none;
@@ -1004,7 +1077,7 @@ button:focus{
 button:hover{
     background: #626161;
     cursor: pointer;
-    transition: background 500ms;
+    transition: background .5s;
 }
 
 button:hover:before{
@@ -1018,6 +1091,7 @@ button:hover:after{
 }
 
 .button1{
+    opacity: 0;
     position: absolute; 
     top: 85%;
     left: 45%;
@@ -1025,21 +1099,60 @@ button:hover:after{
     padding: 15px 15px;
 }
 
+.button1.is_visible{
+    opacity: 1;
+    position: absolute; 
+    top: 85%;
+    left: 45%;
+    font-size: 1.3vw;
+    padding: 15px 15px;
+    transform: translateY(-30%);
+    transition: all .6s 1.5s;
+}
+
 .button2{
+    opacity: 0;
     position: absolute; 
     top: 85%;
     left: 69%;
     font-size: 1.3vw;
     padding: 15px 15px;
 }
+
+.button2.is_visible{
+    opacity: 1;
+    position: absolute; 
+    top: 85%;
+    left: 69%;
+    font-size: 1.3vw;
+    padding: 15px 15px;
+    transform: translateY(-30%);
+    transition: all .6s 1.5s;
+}
 .second_page .first_section{
+    opacity: 0;
     position: absolute;
     top: 10%;
+    left: 45%;
     transform: translate(-5%,0%);
     transition: transform .6s;
     width: 100%;
     height: 200px;
     background: none;
+}
+
+.second_page .first_section.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    transform: translate(-5%,0%);
+    transition: transform .6s;
+    width: 100%;
+    height: 200px;
+    background: none;
+    transform: translateX(-50%);
+    transition: all .6s .5s;
 }
 
 
@@ -1070,15 +1183,27 @@ button:hover:after{
     background: none;
 }
 
-.second_page .second_section{
+
+body .second_page .second_section{
+    opacity: 0;
     position: absolute;
     top: 35%;
-    left: 24%;
-    transform: translate(-5%,0%);
-    transition: transform .6s;
+    left: 0%;
     width: 60%;
     height: 300px;
     background: none;
+}
+
+body .second_page .second_section.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 60%;
+    height: 300px;
+    background: none;
+    transform: translate(35%,0%);
+    transition: all .6s .5s;
 }
 
 .game_img{
@@ -1088,7 +1213,7 @@ button:hover:after{
     width: 45%;
     height: 200px;
     box-shadow: 0 0 4px 4px;
-    background-color: #0b0a0d;;
+    background-color: #0b0a0d;
 }
 
 .second_page .second_section img{
@@ -1132,6 +1257,7 @@ button:hover:after{
 }
 
 .face2{
+    opacity: 0;
     position: absolute;
     top: 130%;
     left: 38%;
@@ -1139,7 +1265,18 @@ button:hover:after{
     background: none;
 }
 
+.face2.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 130%;
+    left: 38%;
+    width: 7%;
+    background: none;
+    transition: all .6s .3s
+}
+
 .link2{
+    opacity: 0;
     position: absolute;
     top: 130%;
     left: 58%;
@@ -1147,7 +1284,18 @@ button:hover:after{
     background: none;
 }
 
+.link2.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 130%;
+    left: 58%;
+    width: 7%;
+    background: none;
+    transition: all .6s .3s
+}
+
 .git2{
+    opacity: 0;
     position: absolute;
     top: 130%;
     left: 78%;
@@ -1157,7 +1305,20 @@ button:hover:after{
     background: none;
 }
 
+.git2.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 130%;
+    left: 78%;
+    width: 7%;
+    border: none;
+    border-radius: 100%;
+    background: none;
+    transition: all .6s .3s
+}
+
 .social_media1{
+    opacity: 0;
     position: absolute;
     top: 70%;
     left: 43%;
@@ -1169,9 +1330,24 @@ button:hover:after{
     text-shadow: 1px 1px #24252A;
 }
 
+.social_media1.is_visible{
+    opacity: 1;
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+    background: none;
+    text-shadow: 1px 1px #24252A;
+    transform: translateY(-30%);
+    transition: all .6s .3s
+}
+
 .footer p{
     position: absolute;
-    top: 250%;
+    top: 245%;
     left: 62.5%; 
     font-family: 'Poppins', serif;
     font-size: 1.1vw;

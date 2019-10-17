@@ -6,7 +6,6 @@
             <meta name="author" content="Ricardo Velhinho">
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link href="style.css" rel="stylesheet"  type="text/css">
-            <script src="javascript/yo.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
             <title>Ricardo Velhinho's Website</title>
@@ -14,42 +13,44 @@
         <body>
             <header>
                 <div class="nav">
-                    <ul>
+                    <ul class="nav_ul show-on-scroll">
                         <li id="li1">About</li>
                         <li id="li2">Personal Projects</li>
                         <li id="li3">Social Media</li>
                     </ul>
+                    <div class="nav_helper show-on-scroll">
+                    </div>
                 </div>
             </header>
             <div class="first_page" id="1">
                 <div class="first_section">
-                    <img src="eu.jpg" class="mypic" alt="Ricardo Velhinho"/>
-                    <div class="text">
-                        <p class="nome1">
+                    <img src="eu.jpg" class="mypic show-on-scroll" alt="Ricardo Velhinho"/>
+                    <div class="text show-on-scroll">
+                        <p class="nome1 show-on-scroll">
                             Ricardo Velhinho
                         </p>
-                        <p class="nome2">
+                        <p class="nome2 show-on-scroll">
                             Computer Science & Engeneering student at Instituto Superior Técnico
                         </p>
-                        <p class="desc2">
+                        <p class="desc2 show-on-scroll">
                             Hi, welcome to my page! At first thought you may think i'm like the typical nerd
                             but guess what? I kinda am. I'm particularly into hobbies like web and game development as well as watching
                             TV series and reading books! I'm a bit introverted but very friendly so anything you may want to tell me,
                             feel free!
                         </p>
                     </div>
-                    <button type="button" class="button1">Download my CV</button>
-                    <a href="mailto:ricvelhinho@gmail.com"><button type="button" class="button2">Contact</button></a>
+                    <button type="button" class="button1 show-on-scroll">Download my CV</button>
+                    <a href="mailto:ricvelhinho@gmail.com"><button type="button" class="button2 show-on-scroll">Contact</button></a>
                 </div>
             </div>
             <div class="second_page" id="2">
-                <div class="first_section">
+                <div class="first_section show-on-scroll">
                     <p class="p1">My upcoming projects...</p>
                     <p class="p2">I'm currently working on some personal projects like my first game. For now it' still in development but i'll
                         update you with news about it. You can check it out below!
                     </p>
                 </div>
-                <div class="second_section">
+                <div class="second_section show-on-scroll">
                     <div class="game1">
                         <div class="game_img">
                                 <img src="question.png"/>
@@ -62,13 +63,13 @@
             </div>
             <div class="third_page" id="3">
                 <div class="first_section">
-                        <p class="social_media1">
+                        <p class="social_media1 show-on-scroll">
                                 Check out my Social Media!
                         </p>
-                        <div class="social_media">
-                            <a href="https://www.facebook.com/ricardo.velhinho" class="facebook"><img src="facebook.svg" class="face2"/></a>
-                            <a href="https://www.linkedin.com/in/ricardo-velhinho/" class="linkedin"><img src="linkedin2.png" class="link2"/></a>
-                            <a href="https://github.com/RVelhinho" class="github"><img src="git.png"  class="git2" /></a>
+                        <div class="social_media show-on-scroll">
+                            <a href="https://www.facebook.com/ricardo.velhinho" class="facebook"><img src="facebook.svg" class="face2 show-on-scroll"/></a>
+                            <a href="https://www.linkedin.com/in/ricardo-velhinho/" class="linkedin"><img src="linkedin2.png" class="link2 show-on-scroll"/></a>
+                            <a href="https://github.com/RVelhinho" class="github"><img src="git.png"  class="git2 show-on-scroll" /></a>
                         </div>
                         <div class="footer">
                             <p>
@@ -77,5 +78,6 @@
                         </div>
                 </div>
             </div>
+            <script src="javascript/yo.js"></script>
         </body>
     </html>
